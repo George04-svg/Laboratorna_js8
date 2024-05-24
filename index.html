@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price Input Validation</title>
+    <style>
+        #price-input {
+            border: 1px solid #ccc;
+            padding: 5px;
+            font-size: 16px;
+        }
+        #price-input:focus {
+            border-color: green;
+            outline: none;
+        }
+        .green-border {
+            border-color: green !important;
+        }
+        .red-border {
+            border-color: red !important;
+        }
+        .green-text {
+            color: green;
+        }
+        .error-message {
+            color: red;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <label for="price-input">Price</label>
+    <input type="number" id="price-input" />
+    <div id="message-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
